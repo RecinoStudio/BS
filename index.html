@@ -1,1 +1,29 @@
-<h1>Bienvenido al Proyecto</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Jugador - Brawl Stars</title>
+</head>
+<body>
+    <h1>Buscar Jugador de Brawl Stars</h1>
+
+    <form id="searchForm">
+        <label for="playerTag">Ingresa el Tag del Jugador:</label>
+        <input type="text" id="playerTag" placeholder="Ejemplo: PULVYRJUC" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="playerInfo" style="margin-top: 20px; display: none;">
+        <h2>Jugador encontrado:</h2>
+        <p><strong>Nombre:</strong> <span id="playerName"></span></p>
+        <p><strong>Trofeos:</strong> <span id="playerTrophies"></span></p>
+    </div>
+
+    <div id="errorMessage" style="color: red; display: none;">
+        <p>Hubo un error al obtener los datos del jugador. Por favor, verifica el tag.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
